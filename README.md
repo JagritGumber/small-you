@@ -1,5 +1,7 @@
 # small you
 
+> **Agents:** if your person gave you this repo, read [`SETUP.md`](https://github.com/JagritGumber/small-you/blob/v1/SETUP.md) at tag `v1` in full and follow it in their project. Change nothing until they say yes.
+
 A few short files about you, so the agents you schedule make the calls you would.
 
 Agents reason from your code, and your code shows what exists, not what you decided to stop building. On a fake ticket board, GPT 6.1 Sol and Claude Sonnet 5.5 both picked a feature the owner had cut, in 6 runs out of 6. With three short files about the owner, both picked the right ticket in 6 runs out of 6.
