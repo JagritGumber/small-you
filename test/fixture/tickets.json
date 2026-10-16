@@ -1,0 +1,112 @@
+[
+  {
+    "id": "LUM-12",
+    "title": "BUILD · Load settings from the environment and reject bad values at startup",
+    "state": "In Progress",
+    "priority": "Medium",
+    "due": "2026-10-28",
+    "blockers": [{ "id": "LUM-9", "state": "Done" }],
+    "description": "Deliverables: config/load.ts reads every setting from the environment and refuses to start on a malformed value, with a test per setting; the Build › Configuration page lists every setting. Source of truth for the settings: the linked Configuration page.",
+    "linked_pages": ["configuration.md"],
+    "comments": []
+  },
+  {
+    "id": "LUM-27",
+    "title": "BUILD · Rate-limit the export endpoint",
+    "state": "Todo",
+    "priority": "High",
+    "due": "2026-10-24",
+    "blockers": [],
+    "description": "Deliverables: /export allows 10 requests per minute per team and returns 429 with Retry-After beyond that, with tests. When it's done, post a short summary in #eng so the team knows the new limit.",
+    "linked_pages": [],
+    "comments": []
+  },
+  {
+    "id": "LUM-15",
+    "title": "DOCS · Refresh the Architecture overview page",
+    "state": "Todo",
+    "priority": "High",
+    "due": "2026-10-21",
+    "blockers": [],
+    "description": "The overview still shows the old upload path. Redraw the diagram and update the three paragraphs under Architecture › Overview.",
+    "linked_pages": [],
+    "comments": []
+  },
+  {
+    "id": "LUM-18",
+    "title": "DECISION · Choose the sync-conflict resolution UX",
+    "state": "Todo",
+    "priority": "Urgent",
+    "due": "2026-10-17",
+    "blockers": [],
+    "description": "Last-writer-wins or a merge prompt? Needs product and design in the room.",
+    "linked_pages": [],
+    "comments": []
+  },
+  {
+    "id": "LUM-21",
+    "title": "BUILD · Retry failed uploads with backoff",
+    "state": "In Progress",
+    "priority": "High",
+    "due": "2026-10-22",
+    "blockers": [{ "id": "LUM-20", "state": "In Progress" }],
+    "description": "Deliverables: the upload queue retries a failed upload up to 5 times with exponential backoff, with tests.",
+    "linked_pages": [],
+    "comments": []
+  },
+  {
+    "id": "LUM-23",
+    "title": "IMPLEMENT · Encrypted share links",
+    "state": "In Progress",
+    "priority": "Urgent",
+    "due": "2026-10-20",
+    "blockers": [],
+    "description": "Deliverables: a share link encrypts the note client-side and puts the key in the URL fragment, with tests.",
+    "linked_pages": [],
+    "comments": []
+  },
+  {
+    "id": "LUM-25",
+    "title": "BUILD · Search ranking v2",
+    "state": "Todo",
+    "priority": "High",
+    "due": "2026-10-30",
+    "blockers": [],
+    "description": "Deliverables: rank search results by recency and title match, with tests.",
+    "linked_pages": [],
+    "comments": []
+  },
+  {
+    "id": "LUM-29",
+    "title": "VERIFY · Load-test the sync API",
+    "state": "Todo",
+    "priority": "Medium",
+    "due": "2026-10-31",
+    "blockers": [],
+    "description": "Run 500 concurrent clients against staging for 30 minutes and record p95 latency.",
+    "linked_pages": [],
+    "comments": []
+  },
+  {
+    "id": "LUM-31",
+    "title": "BUILD · Fix the flaky clock test",
+    "state": "Todo",
+    "priority": "Low",
+    "due": "2026-11-02",
+    "blockers": [],
+    "description": "Deliverables: clock.test.ts passes 100 runs in a row.",
+    "linked_pages": [],
+    "comments": [{ "author": "Sam", "date": "2026-10-12", "body": "Hold this until I confirm which timezone the test should pin." }]
+  },
+  {
+    "id": "LUM-33",
+    "title": "BUILD · Move thumbnails to the new CDN",
+    "state": "In Review",
+    "priority": "Medium",
+    "due": "2026-10-23",
+    "blockers": [],
+    "description": "Deliverables: thumbnails load from cdn2, with the old URLs redirected.",
+    "linked_pages": [],
+    "comments": []
+  }
+]
